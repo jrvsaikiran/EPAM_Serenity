@@ -13,6 +13,7 @@ public class FbPage extends PageObject {
     @FindBy(xpath = "//input[@id='pass']")
     WebElement password;
 
+
     public void sendUsername(String user){
         getDriver().findElement(By.xpath("//input[@id='email']")).sendKeys(user);
     }
